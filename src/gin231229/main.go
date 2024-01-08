@@ -10,6 +10,6 @@ func main() {
 	r.LoadHTMLGlob("templates/**/*")
 	r.Static("/s", "static") // 相对路径 文件夹名称 (映射关系)
 	//r.StaticFS("/s",http.Dir("static"))
-	r.GET("/hello2", myfunc.Hello2)
+	r.GET("/hello3", myfunc.Hello3)
 	r.Run()
 }
